@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $hello = 'Hello World';
+        view()->share('hello', $hello);
+        
     }
 }
